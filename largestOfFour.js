@@ -9,12 +9,11 @@ function largestOfFour(arr) {
 
   var newArr = [];
   
-  // 2. loop through the outer array
   for(var i = 0; i < arr.length; i++) {
-    var largest = -10000;  //every time you go through inner array, will reset itself to -10000, 
+    var largest = -10000;  //every time going through inner array, will reset itself to -10000, 
     //want to make sure first time it runs it's smaller than any number in the array
     for(var j = 0; j < arr[i].length; j++) {
-    // 3.loop through the inner aray and return the largest number
+    //loop through the inner aray and return the largest number
      if(largest < arr[i][j]) {
        largest = arr[i][j];
      }      
@@ -22,7 +21,7 @@ function largestOfFour(arr) {
    newArr.push(largest);
       
   }
-  // 4. add this new largest num to newArr 
+  
   return newArr;
 }
 
